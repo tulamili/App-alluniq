@@ -13,7 +13,7 @@ This module provides a UNIX-like command `alluniq'.
 
 ■■ 目的 ■■
 
-  コマンド allunniq により、データの重複が無いかが分かる。
+  コマンド alluniq により、データの重複が無いかが分かる。
 
 
 ■■ このコマンドについての今後の注意点 ■■
