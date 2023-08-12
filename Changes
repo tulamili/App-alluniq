@@ -1,0 +1,124 @@
+
+Revision history for the module "App::alluniq"
+
+
+0.250  2023-08-12T14:00+0900  App::alluniq として切り出すことにした。2台のPCで動作の食い違いを見つけ、2重管理を避けるため。
+
+
+--- 
+changeset:   1614:a3ab6e29381f
+user:        Toshiyuki Shimono <shimono@dglab.com>
+date:        Tue Nov 26 18:46:09 2019 +0900
+summary:     alluniq シェバングを変更
+
+changeset:   1283:999ee6c2fdcd
+user:        Toshiyuki Shimono <shimono@dglab.com>
+date:        Thu Jun 28 17:40:14 2018 +0900
+summary:     alluniq 色を変えた。 --version を使えるようにした。
+
+changeset:   1180:1f40cbf841f6
+user:        Toshiyuki Shimono <shimono@dglab.com>
+date:        Wed Jun 06 11:41:50 2018 +0900
+summary:     alluniq 出力を見やすいようにした。
+
+changeset:   820:fffff4377677
+user:        Toshiyuki Shimono <tshimono@uhuru.jp>
+date:        Thu Oct 20 13:03:29 2016 +0900
+summary:     alluniq いろいろ整理。-=については処理個数の表示が1多すぎなのでデバグ。
+
+changeset:   761:059dc2527df5
+parent:      759:f0f267692e6c
+user:        Toshiyuki Shimono <tshimono@uhuru.jp>
+date:        Tue Oct 04 13:50:08 2016 +0900
+summary:     88個のファイルについて、先頭行の/usr/bin/env perl -T にしていた729番目のコミットを backout して、元に戻した
+
+changeset:   729:ee10a89adbe9
+user:        Toshiyuki Shimono <tshimono@uhuru.jp>
+date:        Tue Aug 09 21:00:02 2016 +0900
+summary:     107個のファイルについて、1行目を書換。env と -T  を使う様にした。
+
+changeset:   716:1a50b1c4fafe
+user:        Toshiyuki Shimono <tshimono@uhuru.jp>
+date:        Tue Aug 09 15:45:18 2016 +0900
+summary:     alluniq で  getopts 中で -C が不要なので除去した。
+
+changeset:   584:05900028ab71
+user:        Toshiyuki Shimono <tshimono@uhuru.jp>
+date:        Thu Jul 14 16:00:19 2016 +0900
+summary:     alluniq.pl を alluniq に改名。
+
+changeset:   567:ef784a25f026
+user:        Yukako Toko <yuka1007ko@gmail.com>
+date:        Fri Jul 08 05:20:59 2016 +0000
+summary:     alluniq.pl をunix哲学に基づいてリファクタリング。ヘルプの追記。
+
+changeset:   566:3c87e363cd09
+user:        Yukako Toko <yuka1007ko@gmail.com>
+date:        Fri Jul 08 03:07:52 2016 +0000
+summary:     alluniq.pl に-nオプションと-sオプションを付けた。-qオプション以外の場合、概要情報は標準エラー出力にする。
+
+changeset:   559:efb3ba878c1e
+user:        Yukako Toko <yuka1007ko@gmail.com>
+date:        Thu Jul 07 06:10:34 2016 +0000
+summary:     alluniq.pl を約2.5倍高速化。リファクタリング。
+
+changeset:   293:249a7879fd44
+user:        Toshiyuki Shimono
+date:        Wed Mar 02 17:27:30 2016 +0900
+summary:     ディレクトリ名の変更。11を入れた。||がor演算であることに由来。
+
+changeset:   288:9ed7f9c003e3
+user:        Toshiyuki Shimono
+date:        Wed Mar 02 15:50:34 2016 +0900
+summary:     ディレクトリの新設や変更
+
+changeset:   254:945cc18b8f03
+user:        Toshiyuki Shimono
+date:        Mon Feb 22 19:43:03 2016 +0900
+summary:     alluniq.pl の出力のある文面を訂正
+
+changeset:   222:d9e9cadc6949
+user:        Toshiyuki Shimono
+date:        Wed Feb 17 15:53:53 2016 +0900
+summary:     ファイル編成の変更中
+
+changeset:   138:89fdf260eca7
+user:        Toshiyuki Shimono
+date:        Mon Feb 08 14:16:00 2016 +0900
+summary:     alluniq.pl -= の処理を加えた。
+
+changeset:   136:89f297280265
+user:        Toshiyuki Shimono
+date:        Mon Feb 08 13:31:25 2016 +0900
+summary:     alluniq.pl で、--help が動作するようにした。
+
+changeset:   135:3ca82fce0266
+user:        Toshiyuki Shimono
+date:        Mon Feb 08 13:25:44 2016 +0900
+summary:     alluniq.pl 少しプログラムを書き換えて、さらに解説を加えた。
+
+changeset:   134:910c83eeca71
+user:        Toshiyuki Shimono
+date:        Mon Feb 08 13:12:15 2016 +0900
+summary:     alluniq.pl 中身の変更の途中
+
+changeset:   133:cf7f4bf4bc86
+user:        Toshiyuki Shimono
+date:        Mon Feb 08 13:12:00 2016 +0900
+summary:     alluniq.pl 中身の変更の途中
+
+changeset:   97:e59f6aa4cc8a
+user:        Shimono Toshiyuki at Komagome
+date:        Sat Jan 30 23:18:52 2016 +0900
+summary:     分かり安いようにディレクリ分けをした。
+
+changeset:   92:11fd35cf5667
+user:        Shimono Toshiyuki at Komagome
+date:        Sat Jan 30 22:03:21 2016 +0900
+summary:     isuniq.plをalluniq.plに名前を変えた。
+
+changeset:   0:fe83282abfec
+user:        Toshiyuki Shimono <tulamili@gmail.com>
+date:        Tue Apr 14 20:09:19 2015 +0900
+summary:     Initial commit with contributors
+
