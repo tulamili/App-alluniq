@@ -1,12 +1,12 @@
 package App::alluniq ;  
-our $VERSION = '0.250' ; 
-our $DATE = '2023-08-12T14:40+09:00' ; 
+our $VERSION = '0.252' ; 
+our $DATE = '2023-08-12T15:27+09:00' ; 
 
 =encoding utf8
 
 =head1 NAME
 
-App::alluniq -- Align the number of columns on each line upon TSV input.
+App::alluniq -- Check all the lines are different or not. If not it shows how the linees differ.
 
 =head1 SYNOPSIS
 
