@@ -46,11 +46,11 @@ sub simpleAllUniq ( $ ) {
 	else { 
 	    print 0 , "\n" if $o{1} ; # <-- alluniq と聞かれて、No だから、ブール値の0 を出力。
 	    return 1 if $o{q} ;
-	    print STDERR # {$o{q} ? \* STDOUT : \*STDERR }
-	      CYAN "Some counted lines are " , BRIGHT_RED "same.  " ,  
-	      CYAN , "Different " , BRIGHT_CYAN (scalar keys %str2cnt) , CYAN " / All " , BRIGHT_CYAN $. . " ; " , 
-	      CYAN ,  "Maximum multiplication : " , BRIGHT_CYAN  max( values %str2cnt ) ,
-	      CYAN "  ($Script)\n"  ;
+	    print STDERR #BOLD FAINT # {$o{q} ? \* STDOUT : \*STDERR }
+          FAINT CYAN "Different " , RESET BRIGHT_CYAN (scalar keys %str2cnt) , FAINT CYAN " / All " , RESET BRIGHT_CYAN ($.) . " . " , 
+	      FAINT CYAN "Some counted lines are " , RESET BRIGHT_RED "same.  " ,  
+	      FAINT CYAN ,  "Maximum multiplication : " , RESET BRIGHT_CYAN  max( values %str2cnt ) ,
+	      FAINT CYAN "  ($Script)\n"  ;
 	    return 1 ; 
 	}
 }
